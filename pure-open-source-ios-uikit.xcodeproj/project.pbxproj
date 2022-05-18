@@ -16,6 +16,12 @@
 		4D6397AF2834EE2F0075FCC1 /* pure_open_source_ios_uikitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6397AE2834EE2F0075FCC1 /* pure_open_source_ios_uikitTests.swift */; };
 		4D6397B92834EE2F0075FCC1 /* pure_open_source_ios_uikitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6397B82834EE2F0075FCC1 /* pure_open_source_ios_uikitUITests.swift */; };
 		4D6397BB2834EE2F0075FCC1 /* pure_open_source_ios_uikitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6397BA2834EE2F0075FCC1 /* pure_open_source_ios_uikitUITestsLaunchTests.swift */; };
+		4DC6E30E2835076E0034E7C1 /* AmityUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC6E30D2835076E0034E7C1 /* AmityUIKit.framework */; };
+		4DC6E30F2835076E0034E7C1 /* AmityUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC6E30D2835076E0034E7C1 /* AmityUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4DC6E313283507760034E7C1 /* AmitySDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC6E311283507760034E7C1 /* AmitySDK.xcframework */; };
+		4DC6E314283507760034E7C1 /* AmitySDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC6E311283507760034E7C1 /* AmitySDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4DC6E315283507760034E7C1 /* Realm.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC6E312283507760034E7C1 /* Realm.xcframework */; };
+		4DC6E316283507760034E7C1 /* Realm.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC6E312283507760034E7C1 /* Realm.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4DC6E3102835076E0034E7C1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4DC6E30F2835076E0034E7C1 /* AmityUIKit.framework in Embed Frameworks */,
+				4DC6E314283507760034E7C1 /* AmitySDK.xcframework in Embed Frameworks */,
+				4DC6E316283507760034E7C1 /* Realm.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		4D6397942834EE2D0075FCC1 /* pure-open-source-ios-uikit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pure-open-source-ios-uikit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D6397972834EE2D0075FCC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +71,9 @@
 		4D6397B42834EE2F0075FCC1 /* pure-open-source-ios-uikitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pure-open-source-ios-uikitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D6397B82834EE2F0075FCC1 /* pure_open_source_ios_uikitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pure_open_source_ios_uikitUITests.swift; sourceTree = "<group>"; };
 		4D6397BA2834EE2F0075FCC1 /* pure_open_source_ios_uikitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pure_open_source_ios_uikitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4DC6E30D2835076E0034E7C1 /* AmityUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AmityUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DC6E311283507760034E7C1 /* AmitySDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AmitySDK.xcframework; path = "Amity-Social-Cloud-UIKit-iOS-OpenSource/UpstraUIKit/Shared/AmitySDK.xcframework"; sourceTree = "<group>"; };
+		4DC6E312283507760034E7C1 /* Realm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Realm.xcframework; path = "Amity-Social-Cloud-UIKit-iOS-OpenSource/UpstraUIKit/Shared/Realm.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +81,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DC6E30E2835076E0034E7C1 /* AmityUIKit.framework in Frameworks */,
+				4DC6E313283507760034E7C1 /* AmitySDK.xcframework in Frameworks */,
+				4DC6E315283507760034E7C1 /* Realm.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +111,7 @@
 				4D6397AD2834EE2F0075FCC1 /* pure-open-source-ios-uikitTests */,
 				4D6397B72834EE2F0075FCC1 /* pure-open-source-ios-uikitUITests */,
 				4D6397952834EE2D0075FCC1 /* Products */,
+				4DC6E30C2835076E0034E7C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +156,16 @@
 			path = "pure-open-source-ios-uikitUITests";
 			sourceTree = "<group>";
 		};
+		4DC6E30C2835076E0034E7C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DC6E311283507760034E7C1 /* AmitySDK.xcframework */,
+				4DC6E312283507760034E7C1 /* Realm.xcframework */,
+				4DC6E30D2835076E0034E7C1 /* AmityUIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +176,7 @@
 				4D6397902834EE2D0075FCC1 /* Sources */,
 				4D6397912834EE2D0075FCC1 /* Frameworks */,
 				4D6397922834EE2D0075FCC1 /* Resources */,
+				4DC6E3102835076E0034E7C1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
